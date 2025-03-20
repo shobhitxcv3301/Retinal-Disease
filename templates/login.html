@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Retina Disease Detection</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #0073e6, #b55800);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .login-container h2 {
+            color: #0073e6;
+        }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-button {
+            background: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            width: 100%;
+        }
+        .login-button:hover {
+            background: #cc5500;
+            transform: scale(1.05);
+        }
+        a {
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+        }
+        .forgot-password {
+            margin-top: 10px;
+        }
+        .back-home {
+            display: block;
+            margin-top: 15px;
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-home:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function redirectToDetection(event) {
+            event.preventDefault();
+            window.location.href = "/detection";
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="POST" onsubmit="redirectToDetection(event)">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <br>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+        <p>Don't have an account? <a href="/register">Sign Up</a></p>
+        <a href="/Landingpage" class="back-home">Back to Home</a>
+    </div>
+</body>
+</html>

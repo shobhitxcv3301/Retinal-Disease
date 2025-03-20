@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retina Disease Detection Dashboard</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(to bottom, #0073e6, #b55800);
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 40px;
+            width: 100%;
+            flex: 1;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            margin: 0;
+            color: #0073e6;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Retina Disease Detection</h2>
+        <a href="https://www.geeksforgeeks.org/levels-in-data-flow-diagrams-dfd/">Home</a>
+        <a href="#">Appointments</a>
+        <a href="test.db">Patient Records</a>
+        <a href="#">Medical Reports</a>
+        <a href="#">Diagnostics</a>
+        <a href="#">Prescriptions</a>
+        <a href="#">Need Help</a>
+        <a href="/Landingpage">Logout</a>
+    </div>
+    <div class="main-content">
+        <div class="header">Dashboard</div>
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Patient Records</h3>
+                <p>Manage patient history and reports</p>
+            </div>
+            <div class="card">
+                <h3>Analysis Reports</h3>
+                <p>AI-generated retina analysis</p>
+            </div>
+            <div class="card">
+                <h3>Appointments</h3>
+                <p>Schedule and manage consultations</p>
+            </div>
+            <div class="card">
+                <h3>Settings</h3>
+                <p>Manage preferences and account</p>
+            </div>
+        </div>
+        {{user.name}}
+        {{user.email}}
+        {{user.age}}
+        {{user.gender}}
+    </div>
+    <footer>
+        <p>&copy; 2025 Shakehand Technologies. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

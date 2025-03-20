@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retina Disease Blog</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('blog-bg.jpg') no-repeat center center/cover;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #0073e6, #b55800);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .blog-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .blog-post {
+            text-align: center;
+            width: 45%;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .blog-post:hover {
+            transform: scale(1.05);
+        }
+        .blog-post h2 a {
+            color: #0073e6;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .blog-post h2 a:hover {
+            text-decoration: underline;
+        }
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background: #0073e6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background: #005bb5;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Retina Disease Blog</h1>
+    </header>
+    <div class="blog-container">
+        <div class="blog-post">
+            <h2><a href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/diabetic-retinopathy" target="_blank">Diabetic Retinopathy</a></h2>
+        </div>
+        <div class="blog-post">
+            <h2><a href="https://my.clevelandclinic.org/health/diseases/15246-macular-degeneration" target="_blank">Age-related Macular Degeneration</a></h2>
+        </div>
+        <div class="blog-post">
+            <h2><a href="https://my.clevelandclinic.org/health/diseases/10705-retinal-detachment" target="_blank">Retinal Detachment</a></h2>
+        </div>
+        <div class="blog-post">
+            <h2><a href="https://www.mayoclinic.org/diseases-conditions/glaucoma/symptoms-causes/syc-20372839" target="_blank">Glaucoma</a></h2>
+        </div>
+        <div class="blog-post">
+            <h2><a href="https://www.msdmanuals.com/professional/eye-disorders/retinal-disorders/hypertensive-retinopathy" target="_blank">Hypertensive Retinopathy</a></h2>
+        </div>
+    </div>
+    <a href="/Landingpage" class="back-button">Back to Home</a>
+    <footer>
+        <p>&copy; 2025 Shakehand Technologies. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+com
